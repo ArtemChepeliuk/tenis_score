@@ -1,4 +1,4 @@
-var leftScore = 3;
+var leftScore = 0;
 var rightScore = 0;
 
 function lcounter() {
