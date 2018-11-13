@@ -1,5 +1,5 @@
-var leftScore = document.getElementById('lscore');
-var rightScore = document.getElementById('rscore');
+var leftScore = 3;
+var rightScore = 0;
 
 function lcounter() {
   document.getElementById('lscore').innerHTML = ++leftScore;
@@ -16,17 +16,20 @@ function rcounter() {
 function reset() {
   leftScore = 0;
   rightScore = 0;
-  document.getElementById('rscore').innerHTML = leftScore;
-  document.getElementById('lscore').innerHTML = rightScore;
+  document.getElementById('lscore').innerHTML = leftScore;
+  document.getElementById('rscore').innerHTML = rightScore;
 }
 
+document.getElementById("lbutton").addEventListener("click", sumNumbers)
 
-let summ = leftScore + rightScore;
- 
+function sumNumbers() {
+  let x = document.getElementById('lscore');
+  let y = document.getElementById('rscore');
+  let summ = x + y;
+
   if (summ % 2 == 0) {
     console.log(true)
   } else {
     console.log(false)
   }
-
-
+}
