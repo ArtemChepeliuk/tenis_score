@@ -61,7 +61,7 @@ img {
 .ball {
   max-width: 80px;
   height: auto;
-  visibility: visible;
+  visibility: hidden;
 }
 
 button {
