@@ -49,7 +49,7 @@ img {
 }
 
 .right_score {
-  color: rgb(111, 111, 251);
+  color: blue;
   background-color: skyblue;
   width: 80px;
   height: 80px;
@@ -66,4 +66,8 @@ button {
   width: 80px;
   height: 80px;
   font-size: 40px;
+}
+
+#reset{
+  font-size: 15px;
 }
