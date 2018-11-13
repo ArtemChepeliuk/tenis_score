@@ -30,7 +30,8 @@ function onUpdate() {
     document.getElementById('rBall').style.visibility = 'hidden';
     console.log('visn');
     // sum % 2 = 1
-  } else {
+  } 
+  else {
     document.getElementById('rBall').style.visibility = 'visible';
     document.getElementById('lBall').style.visibility = 'hidden';
     console.log('hidn');
