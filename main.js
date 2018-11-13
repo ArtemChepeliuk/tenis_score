@@ -1,12 +1,17 @@
-var leftScore = 0;
-var rightScore = 0;
+var leftScore = document.getElementById('lscore');
+var rightScore = document.getElementById('rscore');
+
 function lcounter() {
   document.getElementById('lscore').innerHTML = ++leftScore;
+  return leftScore;
 }
 
 function rcounter() {
   document.getElementById('rscore').innerHTML = ++rightScore;
+  return rightScore;
 }
+
+
 
 function reset() {
   leftScore = 0;
@@ -14,3 +19,14 @@ function reset() {
   document.getElementById('rscore').innerHTML = leftScore;
   document.getElementById('lscore').innerHTML = rightScore;
 }
+
+
+let summ = leftScore + rightScore;
+ 
+  if (summ % 2 == 0) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
+
+
