@@ -1,41 +1,3 @@
-// var leftScore = 0;
-// var rightScore = 0;
-
-// function lcounter() {
-//   document.getElementById('lscore').innerHTML = ++leftScore;
-//   return leftScore;
-// }
-
-// function rcounter() {
-//   document.getElementById('rscore').innerHTML = ++rightScore;
-//   return rightScore;
-// }
-
-
-
-// function reset() {
-//   leftScore = 0;
-//   rightScore = 0;
-//   document.getElementById('lscore').innerHTML = leftScore;
-//   document.getElementById('rscore').innerHTML = rightScore;
-// }
-
-// document.getElementById("lbutton").addEventListener("click", sumNumbers)
-
-// function sumNumbers() {
-//   let x = document.getElementById('lscore').innerText;
-//   let y = document.getElementById('rscore').innerText;
-//   let summ = +x + +y;
-
-//   if (summ % 2 == 0) {
-//     document.getElementById('lBall').style.visibility = 'visible'
-//     document.getElementById('rBall').style.visibility = 'hidden'
-//   } else {
-//     document.getElementById('rBall').style.visibility = 'visible'
-//     document.getElementById('lBall').style.visibility = 'hidden'
-//   }
-// }
-
 var $leftScore = document.getElementById('lscore');
   var $rightScore = document.getElementById('rscore');
     leftSum = 0;
@@ -54,11 +16,16 @@ function rcounter() {
 function reset() {
   $leftScore.innerHTML = leftSum = 0;
   $rightScore.innerHTML = rightSum = 0;
-  onUpdate();
+  document.getElementById('lBall').style.visibility = 'visible';
+  document.getElementById('rBall').style.visibility = 'hidden';
 }
 
 function onUpdate() {
-  if ((+leftSum + +rightSum) % 2) {
+  var x = (+leftSum + +rightSum) % 2 == 0;
+  var y = (+leftSum + +rightSum);
+  console.log(x);
+  console.log(y);
+  if ((+leftSum + +rightSum) % 2 == 0) {
     document.getElementById('lBall').style.visibility = 'visible';
     document.getElementById('rBall').style.visibility = 'hidden';
     console.log('visn');
