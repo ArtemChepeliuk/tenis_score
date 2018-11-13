@@ -6,7 +6,7 @@ function lcounter(){
 function rcounter(){
   document.getElementById('rscore').innerHTML = ++rightScore;     
 }
-
+  
 // function reset() {
 //  let left=0;
 //  let right=0;
