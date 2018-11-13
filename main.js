@@ -47,7 +47,7 @@ function lcounter() {
 }
 
 function rcounter() {
-  $rightScore.innerHTML = ++rightScore;
+  $rightScore.innerHTML = ++rightSum;
   onUpdate();
 }
 
@@ -59,12 +59,14 @@ function reset() {
 
 function onUpdate() {
   if ((+leftSum + +rightSum) % 2) {
-    document.getElementById('lBall').style.visibility = 'visible'
-    document.getElementById('rBall').style.visibility = 'hidden'
+    document.getElementById('lBall').style.visibility = 'visible';
+    document.getElementById('rBall').style.visibility = 'hidden';
+    console.log('visn');
     // sum % 2 = 1
   } else {
-    document.getElementById('rBall').style.visibility = 'visible'
-    document.getElementById('lBall').style.visibility = 'hidden'
+    document.getElementById('rBall').style.visibility = 'visible';
+    document.getElementById('lBall').style.visibility = 'hidden';
+    console.log('hidn');
     // sum % 2 = 0
   }
 }
