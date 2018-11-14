@@ -85,3 +85,10 @@ button {
 #lBall{
   padding-left: 10px;
 }
+
+.visible{
+  visibility: visible;
+}
+.novisible{
+  visibility: hidden;
+}
